@@ -15,7 +15,7 @@
 
 <body>
 
-    <p  id = 'headline1'>Schere Stein Papier</p>
+    <p  id = 'headline1'>r</p>
     
     <div id = 'box'>
     <h2 id = 'user'>User</h2>
@@ -25,28 +25,28 @@
     </div>
     
     <div id = 'userbutton'>
-    <button class = 'user_btn'>Schere</button>
-    <button class = 'user_btn'>Stein</button>
-    <button class = 'user_btn'>Papier</button>
+    <button class = 'user_btn'>scissors</button>
+    <button class = 'user_btn'>rock</button>
+    <button class = 'user_btn'>paper</button>
     </div>
     
     <div id = 'computerbutton'>
-    <button class = 'comp_btn'>Schere</button>
-    <button class = 'comp_btn'>Stein</button>
-    <button class = 'comp_btn'>Papier</button>
+    <button class = 'comp_btn'>scissors</button>
+    <button class = 'comp_btn'>rock</button>
+    <button class = 'comp_btn'>paper</button>
     </div>
     
     
     <div id = 'imageuser'>
-    <img class = 'user_img' src ="schererichtig.png">
-    <img class = 'user_img' src = 'steinrichtig.png'>
-    <img class = 'user_img' src = 'papierrichtig.png'>
+    <img class = 'user_img' src ="scissors.png">
+    <img class = 'user_img' src = 'rock.png'>
+    <img class = 'user_img' src = 'paper.png'>
     </div>
     
     <div id = 'computerimg'>
-    <img class = 'comp_img' src ="schererichtig.png">
-    <img class = 'comp_img' src = 'steinrichtig.png'>
-    <img class = 'comp_img' src = 'papierrichtig.png'>
+    <img class = 'comp_img' src ="scissors.png">
+    <img class = 'comp_img' src = 'rock.png'>
+    <img class = 'comp_img' src = 'paper.png'>
     </div>
     
     
@@ -58,7 +58,7 @@
         var counteruser = 0;
         var countercomp = 0;
     
-        const elems = ['schere', 'stein', 'papier'];
+        const elems = ['scissors', 'rock', 'paper'];
 
         
 //        Zufallsnumber und der zugriff auf Array mit schere stein papier
@@ -101,10 +101,10 @@
             
                switch(generatenumb()) {
 
-                case 'schere':
-                       console.log('schere');
-                       console.log('UNENTSCHIEDEN');
-                        document.getElementById('headline1').innerHTML ="UNENTSCHIEDEN";
+                case 'scissors':
+                       console.log('scissors');
+                       console.log('draw');
+                        document.getElementById('headline1').innerHTML ="draw";
                        counteruser++;
                        countercomp++;
                         //ändert schere button farbe
@@ -113,10 +113,10 @@
                        document.getElementsByClassName('comp_img')[0].style.visibility = 'visible';
                        break;
 
-                   case 'stein': 
-                        console.log('stein');
-                        console.log('COMPUTER HAT GEWONNEN');
-                        document.getElementById('headline1').innerHTML ="Computer hat gewonnen";
+                   case 'rock': 
+                        console.log('rock');
+                        console.log('COMPUTER wins');
+                        document.getElementById('headline1').innerHTML ="Computer wins";
                        countercomp++;
                        //ändert stein  button farbe
                         document.getElementsByClassName('comp_btn')[1].style.color = 'red';
@@ -124,10 +124,10 @@
                         document.getElementsByClassName('comp_img')[1].style.visibility = 'visible';
                        break;
 
-                case 'papier': 
-                       console.log('papier');
-                       console.log('ELION HAT GEWONNEN');
-                       document.getElementById('headline1').innerHTML ="Elion hat gewonnen";
+                case 'paper': 
+                       console.log('paper');
+                       console.log('you win');
+                       document.getElementById('headline1').innerHTML ="you win";
                        counteruser++;
                        
                        //ändert papier button farbe
@@ -176,10 +176,10 @@
             
                switch(generatenumb()) {
 
-                case 'schere':
-                       console.log('schere');
-                       console.log('ELION HAT GEWONNEN');
-                       document.getElementById('headline1').innerHTML ="Elion hat gewonnen";
+                case 'scissors':
+                       console.log('scissors');
+                       console.log('you win');
+                       document.getElementById('headline1').innerHTML ="You win";
                        counteruser++;
                         //ändert schere button  farbe
                         document.getElementsByClassName('comp_btn')[0].style.color = 'red';
@@ -187,10 +187,10 @@
                        document.getElementsByClassName('comp_img')[0].style.visibility = 'visible';
                        break;
 
-                   case 'stein': 
-                       console.log('stein');
-                       console.log('UNENTSCHIEDEN');
-                        document.getElementById('headline1').innerHTML ="UNENTSCHIEDEN";
+                   case 'rock': 
+                       console.log('rock');
+                       console.log('draw');
+                        document.getElementById('headline1').innerHTML ="draw";
                        counteruser++;
                        countercomp++;
                        //ändert stein button farbe 
@@ -199,10 +199,10 @@
                         document.getElementsByClassName('comp_img')[1].style.visibility = 'visible';
                        break;
 
-                case 'papier': 
-                       console.log('papier');
-                       console.log('COMPUTER HAT GEWONNEN');
-                        document.getElementById('headline1').innerHTML ="Computer hat gewonnen";
+                case 'paper': 
+                       console.log('paper');
+                       console.log('COMPUTER wins');
+                        document.getElementById('headline1').innerHTML ="Computer wins";
                        countercomp++;
                        //ändert papier button farbe 
                         document.getElementsByClassName('comp_btn')[2].style.color = 'red';               
@@ -252,10 +252,10 @@
             
                switch(generatenumb()) {  
 
-                case 'schere':
-                       console.log('schere');
-                       console.log('COMPUTER HAT GEWONNEN');
-                     document.getElementById('headline1').innerHTML ="Computer hat gewonnen";
+                case 'scissors':
+                       console.log('scissors');
+                       console.log('COMPUTER wins');
+                     document.getElementById('headline1').innerHTML ="Computer wins";
                        countercomp++;
                        //ändert schere button farbe
                        document.getElementsByClassName('comp_btn')[0].style.color = 'red';
@@ -264,10 +264,10 @@
                        
                        break;
 
-                   case 'stein': 
-                       console.log('stein');
-                       console.log('ELION HAT GEWONNEN');
-                       document.getElementById('headline1').innerHTML ="Elion hat gewonnen";
+                   case 'rock': 
+                       console.log('rock');
+                       console.log('you win');
+                       document.getElementById('headline1').innerHTML ="you win";
                        counteruser++;
                         //ändert schere button farbe
                         document.getElementsByClassName('comp_btn')[1].style.color = 'red';
@@ -276,10 +276,10 @@
                        
                        break;
 
-                case 'papier': 
-                       console.log('papier');
-                       console.log('UNENTSCHIEDEN');
-                        document.getElementById('headline1').innerHTML ="UNENTSCHIEDEN";
+                case 'paper': 
+                       console.log('paper');
+                       console.log('draw');
+                        document.getElementById('headline1').innerHTML ="draw";
                        counteruser++;
                        countercomp++;
                        //ändert schere button farbe
