@@ -1,0 +1,134 @@
+* {
+  background-color: #424242;
+  box-sizing: border-box;
+}
+
+#headline1 {
+  font-size: 3em;
+  color: red;
+  text-align: center;
+}
+
+#box {
+  width: 100%;
+  height: 100px;
+  margin-left: 15%;
+}
+
+#user {
+  width: 30%;
+  font-size: 2em;
+  float: left;
+}
+
+#table1 {
+  width: 10%;
+  font-size: 2em;
+  float: left;
+}
+
+#table2 {
+  width: 20%;
+  font-size: 2em;
+  float: left;
+}
+
+#computer {
+  width: 30%;
+  font-size: 2em;
+  float: left;
+}
+
+/*button für user seite*/
+
+#userbutton {
+  clear: left;
+  float: left;
+  width: 50%;
+}
+.user_btn {
+  width: 25%;
+  height: 100px;
+}
+
+/*button für computer seite */
+
+#computerbutton {
+  float: left;
+  width: 50%;
+}
+
+.comp_btn {
+  width: 25%;
+  height: 100px;
+
+  float: right;
+
+  /* border: */
+}
+
+/*färbt user button rot*/
+
+.user_btn:focus {
+  color: red;
+}
+/*img für user*/
+
+#imageuser {
+  height: 100px;
+  width: 50%;
+  clear: left;
+  float: left;
+
+  margin-top: 20px;
+}
+
+.user_img {
+  width: 25%;
+}
+
+/*img für computer*/
+
+#computerimg {
+  height: 100px;
+  width: 50%;
+  float: left;
+
+  margin-top: 20px;
+}
+
+.comp_img {
+  width: 25%;
+  float: right;
+}
+
+.comp_img {
+  visibility: hidden;
+}
+
+.user_img {
+  visibility: hidden;
+}
+
+/*
+
+#pics_user{
+        
+    float:left;
+    clear:left;
+    padding:30px;
+    margin-top:30px;
+    
+    visibility: hidden;
+    
+}
+
+#pics_comp{
+    
+    float:right;
+    padding:30px;
+    margin-top:30px;
+    
+    visibility: hidden;
+}
+*/
